@@ -1,0 +1,100 @@
+body{
+	background-color: #7c6f7a;
+	font-family: Helvetica;
+}
+.header{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+		"c a"
+		"c b"
+		"c d";
+	border: solid 1px black;
+	background-image: linear-gradient(#e3dfde 45%, #c0bbc1);
+}
+#text1{grid-area:a; font-size: 5em;margin: 10; padding-left: 80; padding-top:10;}
+#text2{grid-area:b; text-align: right;font-size: 3em;margin: 10;padding-left: 80;padding-bottom:0;}
+#pic{grid-area:c;max-height:322px;}
+
+.main{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-areas:
+		"l r";
+	width: 100%;
+	height: 52%;
+	border: solid 1px black;	
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background-color: #c0bbc1;
+		}
+.left{grid-area:l;}
+.right{grid-area:r;}
+.pic{
+	width:100%;
+	height: 100%;
+	max-height: 306px;
+	max-width: 250px;
+	border: solid 1px black;
+}
+.pic .one{ grid-area: 1;}
+.pic .two{ grid-area: 2;}
+.pic .three{ grid-area: 3;}
+.pic .four{ grid-area: 4;}
+.collectionPics{
+	display: grid;
+	padding-top: 0px;
+	max-height: 500px;
+	height: 100%;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas:
+		"1 2 3 4";	
+}
+.news{
+	font-size: 2em;
+	padding-top: 5px;
+	margin-top: 15px;
+	padding-left: 10px;
+}
+.collections{
+	font-size: 2em;
+	padding-top: 22px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.overlay{
+	position: absolute;
+	font-size: 1.3em;
+	width: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+div.one{padding-left: 25px;padding-right:14px;}
+div.two{margin-left: 17.4%;padding-left: 25px;padding-right:37px;}
+div.three{margin-left: 34.6%;padding-left: 35px;padding-right:45px;}
+div.four{margin-left: 52%;padding-left:15px; padding-right:12px;}
+footer{
+	text-align: center;
+	padding-top: 7px;
+}
+.topnav {
+	position: relative;
+	overflow: hidden;
+	grid-area: d;
+	margin-top: 75px;
+		}
+.topnav a {
+	float: right;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #2f2625;
+		}
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+		}
+.topnav a.active {
+	color: black;
+	background-color: #949997;
+		}

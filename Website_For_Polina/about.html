@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>About</title>
+<link rel="stylesheet" type="text/css" href="css/css_aboutPage.css">
+</head>
+<body>
+	<div class="header">
+		Polina Pashutina
+	</div>
+	<div class="topnav">
+		<a href="contact.html">Contact</a>
+		<a href="about.html"  class="active">About</a>
+		<a href="allPics.html">Gallery</a>
+		<a href="home.html">Home</a>
+	</div> 
+	
+	<div>
+	<img src="pics/pic.png" class="image">
+	</div>
+	
+	<div class="text">
+	Inquisitive and dilligent artist with a generalist skillset in 3D Animation,
+	specifically dynamic simulations, character animation, modeling, surfacing and lighting.
+	I am always eager to learn about new tools and techniques, and take on creative challenges
+	in digital and traditional media. Throughout my 4 years at Sheridan College
+	I had a chance to learn about and participate in every step of the animation pipeline,
+	studying alongside some of the most creative and dedicated artists I know.
+	I was one of the production managers in my 3rd year group film "Overthrone",
+	which was the first 3D production I was involved in. A lot of the skills 
+	and technical knowledge I picked up during that time helped me to go on and
+	and create my own short 3D film titled <a href="https://vimeo.com/267740933" target="_blank">"Our Demons"</a> in my last year at Sheridan.
+	</div>
+	
+	<button onclick="topFunction()" id="myBtn"><img src="pics/2.png" style="width:100%;height=100%;max-height:30px;max-width:30px"></button>
+	
+	<footer>&copy; 2020 Vlada Kuzminova and Polina Pashutina</footer>
+	
+	<script>
+	//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</body>
+</html>

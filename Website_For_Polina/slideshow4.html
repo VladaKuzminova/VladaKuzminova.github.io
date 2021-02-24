@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/css_slideshows.css">
+</head>
+<body>
+	<a href="javascript:history.back()" id = "id3">&times;</a>
+	
+	<h2>Colorful Paintings</h2>
+	
+	<img class="myImages" id="myImg" src="pics/colored-drawing/1.jpg" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/colored-drawing/2.png" alt="Snow" style="width:100%;max-width:603px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/colored-drawing/3.jpg" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/colored-drawing/4.jpg" alt="Snow" style="width:100%;max-width:603px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/colored-drawing/5.png" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/colored-drawing/6.png" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img04">
+	  <div id="caption"></div>
+	</div>
+<footer>&copy; 2020 Vlada Kuzminova and Polina Pashutina</footer>
+	<script>	
+		var modal = document.getElementById('myModal');
+		var images = document.getElementsByClassName('myImages');
+		var modalImg = document.getElementById("img04");
+		var captionText = document.getElementById("caption");
+
+		for (var i = 0; i < images.length; i++) {
+		  var img = images[i];
+		  img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		  }
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+			modal.style.display = "none";
+	}
+	</script>
+</body>
+</html>

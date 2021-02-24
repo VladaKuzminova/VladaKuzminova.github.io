@@ -1,0 +1,45 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/css_slideshows.css">
+</head>
+<body>
+	<a href="javascript:history.back()" id = "id3">&times;</a>
+	
+	<h2>Characters</h2>
+	<img class="myImages" id="myImg" src="pics/characters/1.jpg" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/characters/2.jpg" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/characters/3.jpg" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<img class="myImages" id="myImg" src="pics/characters/4.png" alt="Snow" style="width:100%;max-width:300px;height:100%;max-height:400px;">
+	
+	<div id="myModal" class="modal">
+	  <span class="close">&times;</span>
+	  <img class="modal-content" id="img01">
+	  <div id="caption"></div>
+	</div>
+	<footer>&copy; 2020 Vlada Kuzminova and Polina Pashutina</footer>
+  <script>	
+		var modal = document.getElementById('myModal');
+		var images = document.getElementsByClassName('myImages');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+
+		for (var i = 0; i < images.length; i++) {
+		  var img = images[i];
+		  img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		  }
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+			modal.style.display = "none";
+	}
+	</script>
+</body>
+</html>

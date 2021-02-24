@@ -1,0 +1,48 @@
+body{
+	background-color: #486c70;
+	font-family: Calibri;
+}
+.topnav {
+	position: relative;
+	overflow: hidden;
+	border-bottom: solid 1px black;
+	grid-area: menu;
+		}
+.topnav a {
+	float: right;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #2f2625;
+		}
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+		}
+.topnav a.active {
+	color: black;
+	background-color: #949997;
+		}
+.pic{
+	grid-area: a;
+	margin-top: -17%;
+	max-width: 580px;
+	width: 100%;
+}
+.text{
+	grid-area: b;
+	margin-top: 19%;
+	margin-left: -4.5%;
+	font-size: 4em;
+	color: 	#000407;
+}
+.container{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-areas:
+		"menu menu"
+		"a b";
+	height: 100%;
+	max-height: 90%;
+}
